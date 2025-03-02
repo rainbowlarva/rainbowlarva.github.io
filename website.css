@@ -79,10 +79,3 @@ html, body {
   height: auto;
   z-index: 1;
 }
-
-@media (max-width: 600px) {
-  .avatarname {
-    font-size: 8vw;  /* Larger text for smaller screens */
-    margin-top: 10px;
-  }
-}
