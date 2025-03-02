@@ -1,7 +1,7 @@
 .video-background {
   position: fixed;
-  top: 50% !important;
-  left: 50% !important;
+  top: 0 !important;
+  left: 0 !important;
   width: 110%;
   height: 110%;
   overflow: hidden;
