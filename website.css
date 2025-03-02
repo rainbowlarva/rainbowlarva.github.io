@@ -33,7 +33,7 @@ html, body {
 }
 
 .avatar {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +43,7 @@ html, body {
 }
 
 .avatarborder {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
