@@ -56,7 +56,7 @@ html, body {
 }
 
 .avatarborder {
-  z-index 2;
+  z-index: 2;
 }
 
 .avatarborder img, .avatar img {
@@ -71,7 +71,7 @@ html, body {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 20px;
   color: white;
-  margin-top: 20px;  /* Adjust this margin to control the space below the gifs */
+  margin-top: 150px;  /* Adjust this margin to create space below the gifs */
   text-align: center;
   z-index: 3;  /* Ensure text is above the GIFs */
 }
