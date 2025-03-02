@@ -39,3 +39,8 @@ html, body {
   align-items: center;
   height: 100vh;
 }
+
+.avatarborder img {
+  max-width: 100%;
+  height: auto;
+}
