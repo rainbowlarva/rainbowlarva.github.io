@@ -2,6 +2,9 @@
 html, body {
   height: 100%;
   margin: 0; /* Remove default margins */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Background Video Styling */
@@ -35,41 +38,33 @@ html, body {
   padding: 0;
 }
 
-/* Position the avatar container */
-.avatar-container {
-  position: relative;
-  display: inline-block;
-}
-
-/* Avatar and border container to keep them aligned */
+/* Avatar and Border Styling */
 .avatarborder, .avatar {
   position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/* Add additional styles for positioning and aligning */
-.avatar {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
 }
 
-.avatarborder {
-  z-index: 2;
-}
-
-.avatarname {
-  position: absolute;
-  bottom: -40px; /* Position the name below the avatar */
-  text-align: center;
-  font-family: "Trebuchet MS", sans-serif;
-  color: white;
-}
-
-/* Make sure both images are properly sized */
 .avatarborder img, .avatar img {
-  width: 100px; /* Example size */
-  height: 100px; /* Example size */
+  display: block;
+  max-width: none;  /* Allow the images to be their full size */
+  width: auto;      /* Let the image scale naturally */
+  height: auto;     /* Let the image scale naturally */
+}
+
+.avatarborder img {
+  z-index: 2; /* Ensure the border appears above the avatar */
+}
+
+.avatar img {
+  z-index: 1; /* Avatar behind the border */
+}
+
+/* Avatar Name Styling */
+.avatarname {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-top: 20%;
 }
