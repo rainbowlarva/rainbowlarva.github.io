@@ -32,7 +32,7 @@ html, body {
   padding: 0;
 }
 
-.avatar, .avatarborder {
+.avatar, .avatarborder, .avatarname {
   position: absolute;
   display: flex;
   flex-direction: column;
