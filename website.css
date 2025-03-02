@@ -71,7 +71,7 @@ html, body {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 20px;
   color: white;
-  margin-top: 150px;  /* Adjust this margin to create space below the gifs */
+  margin-top: 170px;  /* Adjust this margin to create space below the gifs */
   text-align: center;
   z-index: 3;  /* Ensure text is above the GIFs */
 }
