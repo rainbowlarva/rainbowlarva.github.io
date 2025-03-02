@@ -33,7 +33,7 @@ html, body {
 }
 
 .avatarborder, .avatar {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
