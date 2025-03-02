@@ -33,7 +33,7 @@ html, body {
 }
 
 .avatar, .avatarborder, .avatarname {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,5 +60,5 @@ html, body {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 20px;
   color: white;
-  margin-top: 07%;
+  margin-top: 20px;
 }
