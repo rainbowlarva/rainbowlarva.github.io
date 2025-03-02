@@ -7,8 +7,8 @@ html, body {
   position: fixed;   /* Fixed position to stay in place */
   top: 50%;          /* Align it to the center vertically */
   left: 50%;         /* Align it to the center horizontally */
-  width: 140%;       /* Make sure the video covers more than enough area */
-  height: 140%;
+  width: 130%;       /* Make sure the video covers more than enough area */
+  height: 130%;
   object-fit: cover; /* Ensure it covers without distorting */
   z-index: -1;       /* Place it behind other content */
   pointer-events: none; /* Disable interaction with the video */
