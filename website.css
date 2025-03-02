@@ -10,7 +10,7 @@ html, body {
   width: 110%;
   height: 110%;
   object-fit: cover;
-  z-index: -1;
+  z-index: -9999;
   pointer-events: none;
   transform: translate(-50%, -50%);
   transform-origin: center center;
@@ -32,7 +32,7 @@ html, body {
   padding: 0;
 }
 
-.avatarborder {
+.avatarborder, .avatar {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -45,4 +45,12 @@ html, body {
   display: block;
   max-width: 100%;
   height: auto;
+  z-index: 2;
+}
+
+.avatar img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
 }
