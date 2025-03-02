@@ -53,11 +53,16 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+}
+
+.avatarborder {
+  z-index: 2;
 }
 
 .avatarname {
   position: absolute;
-  bottom: -30px; /* Position the name below the avatar */
+  bottom: -40px; /* Position the name below the avatar */
   text-align: center;
   font-family: "Trebuchet MS", sans-serif;
   color: white;
