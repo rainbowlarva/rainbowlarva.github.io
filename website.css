@@ -32,7 +32,27 @@ html, body {
   padding: 0;
 }
 
-.avatar, .avatarborder, .avatarname {
+.avatar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.avatarborder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.avatarname {
   position: relative;
   display: flex;
   flex-direction: column;
