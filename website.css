@@ -5,6 +5,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* Stack items vertically */
+  position: relative;
 }
 
 /* Background Video Styling */
@@ -44,21 +46,14 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2; /* Ensure both images are above text */
 }
 
-.avatarborder img, .avatar img {
+.avatar img, .avatarborder img {
   display: block;
   max-width: none;  /* Allow the images to be their full size */
   width: auto;      /* Let the image scale naturally */
   height: auto;     /* Let the image scale naturally */
-}
-
-.avatarborder img {
-  z-index: 2; /* Ensure the border appears above the avatar */
-}
-
-.avatar img {
-  z-index: 1; /* Avatar behind the border */
 }
 
 /* Avatar Name Styling */
@@ -66,5 +61,7 @@ html, body {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 20px;
   color: white;
-  margin-top: 20%;
+  margin-top: 20px;  /* Add margin for spacing */
+  position: relative;
+  z-index: 3;  /* Ensure text is above the images */
 }
