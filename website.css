@@ -11,6 +11,7 @@ html, body {
   height: 100%;
   overflow: hidden;
   transition: transform 0.1s ease-out;
+  transform-origin: center center;
   will-change: transform;
 }
 
