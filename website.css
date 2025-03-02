@@ -61,7 +61,8 @@ html, body {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 20px;
   color: white;
-  margin-top: 20px;  /* Add margin for spacing */
+  margin-top: 250px;  /* Adjust this margin value to control the distance from the GIFs */
   position: relative;
   z-index: 3;  /* Ensure text is above the images */
+  text-align: center;
 }
