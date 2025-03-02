@@ -15,8 +15,8 @@ html, body {
 }
 
 .video-background video {
-  width: 130%;
-  height: 130%;
+  width: 50%;
+  height: 50%;
   object-fit: cover;
 }
 
