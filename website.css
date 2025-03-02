@@ -35,34 +35,36 @@ html, body {
   padding: 0;
 }
 
-/* Avatar and Border Styling */
+/* Position the avatar container */
+.avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Avatar and border container to keep them aligned */
 .avatarborder, .avatar {
   position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Add additional styles for positioning and aligning */
+.avatar {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
 }
 
-.avatarborder img, .avatar img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.avatarborder img {
-  z-index: 2; /* Ensure the border appears above the avatar */
-}
-
-.avatar img {
-  z-index: 1; /* Avatar behind the border */
-}
-
-/* Avatar Name Styling */
 .avatarname {
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  position: absolute;
+  bottom: -30px; /* Position the name below the avatar */
+  text-align: center;
+  font-family: "Trebuchet MS", sans-serif;
   color: white;
-  margin-top: 20%;
+}
+
+/* Make sure both images are properly sized */
+.avatarborder img, .avatar img {
+  width: 100px; /* Example size */
+  height: 100px; /* Example size */
 }
