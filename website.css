@@ -1,8 +1,10 @@
+/* Reset margins and set full height */
 html, body {
   height: 100%;
-  margin: 0;  /* Remove default margins */
+  margin: 0; /* Remove default margins */
 }
 
+/* Background Video Styling */
 .video-background {
   position: fixed;
   top: 50%;
@@ -24,6 +26,7 @@ html, body {
   object-fit: cover;
 }
 
+/* Content Styling */
 .content {
   position: relative;
   z-index: 1;
@@ -32,29 +35,31 @@ html, body {
   padding: 0;
 }
 
+/* Avatar and Border Styling */
 .avatarborder, .avatar {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+}
+
+.avatarborder img, .avatar img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .avatarborder img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  z-index: 2;
+  z-index: 2; /* Ensure the border appears above the avatar */
 }
 
 .avatar img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  z-index: 1;
+  z-index: 1; /* Avatar behind the border */
 }
 
+/* Avatar Name Styling */
 .avatarname {
   font-family: 'Trebuchet MS', sans-serif;
   font-size: 20px;
