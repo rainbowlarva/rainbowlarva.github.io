@@ -32,6 +32,11 @@ html, body {
   padding: 0;
 }
 
+.avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
 .avatarborder, .avatar {
   position: absolute;
   display: flex;
@@ -39,7 +44,7 @@ html, body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vh;
+  width: 100&;
 }
 
 .avatarborder img {
