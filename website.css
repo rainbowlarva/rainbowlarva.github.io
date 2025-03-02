@@ -1,26 +1,22 @@
 html, body {
   height: 100%;
-  margin: 0;  /* Remove default margins */
+  margin: 0;
 }
 
 .video-background {
-  position: fixed;   /* Fixed position to stay in place */
-  top: 50%;          /* Align it to the center vertically */
-  left: 50%;         /* Align it to the center horizontally */
-  width: 110%;       /* Make sure the video covers more than enough area */
-  height: 110%;
-  object-fit: cover; /* Ensure it covers without distorting */
-  z-index: -1;       /* Place it behind other content */
-  pointer-events: none; /* Disable interaction with the video */
-  transform: translate(-50%, -50%);
-  transform-origin: center center; /* Ensure the parallax effect moves from the center */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
   transition: transform 0.1s ease-out;
   will-change: transform;
 }
 
 .video-background video {
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
   object-fit: cover;
 }
 
@@ -30,4 +26,12 @@ html, body {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+.avatarborder {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
