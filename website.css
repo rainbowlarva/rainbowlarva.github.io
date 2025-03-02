@@ -12,6 +12,7 @@ html, body {
   object-fit: cover; /* Ensure it covers without distorting */
   z-index: -1;       /* Place it behind other content */
   pointer-events: none; /* Disable interaction with the video */
+  transform: translate(-50%, -50%);
   transform-origin: center center; /* Ensure the parallax effect moves from the center */
   transition: transform 0.1s ease-out;
   will-change: transform;
