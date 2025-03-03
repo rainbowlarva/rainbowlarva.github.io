@@ -1,6 +1,7 @@
 /* Reset margins and set full height */
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0; /* Remove default margins */
   display: flex;
   justify-content: center;
