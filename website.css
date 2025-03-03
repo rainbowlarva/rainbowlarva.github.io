@@ -16,7 +16,6 @@ html, body {
   left: 50%;
   width: 110%;
   height: 110%;
-  object-fit: cover;
   z-index: -9999;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -26,6 +25,9 @@ html, body {
 }
 
 .video-background video {
+  position: absolute; /* Ensure the video stays within its container */
+  top: 0; /* Ensure it covers the container */
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
