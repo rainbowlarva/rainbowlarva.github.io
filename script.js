@@ -19,3 +19,10 @@ function updateVideoPosition() {
 
 // Start the animation loop
 updateVideoPosition();
+
+window.addEventListener('DOMContentLoaded', () => {
+    const video = document.querySelector('video');
+    video.play().catch((error) => {
+        console.error('Video playback failed:', error);
+    });
+});
