@@ -26,17 +26,29 @@
         <p>rainbowlarva</p>
     </div>
         <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const audio = new Audio('audio/kendrick.ogg');
+    window.addEventListener('DOMContentLoaded', () => {
+        const audio = new Audio('audio/kendrick.ogg');
             audio.preload = 'auto'; // Preload the audio file
-            audio.volume = 0.5;  // Set volume to 50%
+            audio.volume = 0;  // Start muted
 
-            document.body.addEventListener('click', () => {
-                audio.play().then(() => {
-                    console.log("Audio is playing");
-                }).catch(error => console.error("Audio playback failed:", error));
-            }, { once: true });
-        });
+    // Play the audio automatically when the page loads
+        function playAudio() {
+            audio.play().then(() => {
+            console.log("Audio is playing");
+
+            // Unmute after 1 second
+        setTimeout(() => {
+            audio.volume = 0.5;  // Adjust to desired volume
+            console.log("Audio unmuted");
+    }, 1000);
+            
+        }).catch(error => console.error("Audio playback failed:", error));
+    }
+
+    // Autoplay without waiting for a click
+    playAudio();
+});
+
     </script>
     <script src="script.js"></script>
 </body>
