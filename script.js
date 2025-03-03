@@ -20,7 +20,7 @@ function updateVideoPosition() {
 // Start the animation loop
 updateVideoPosition();
 
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('click', () => {
     let audio = new Audio('audio/kendrick.mp3');
     audio.play();
-});
+}, { once: true });
