@@ -22,10 +22,11 @@ updateVideoPosition();
 
 window.addEventListener('DOMContentLoaded', () => {
     const audio = new Audio('audio/kendrick.ogg');
+    audio.preload = 'auto'; // Preload the audio file
 
     document.body.addEventListener('click', () => {
         audio.play().then(() => {
             console.log("Audio is playing");
         }).catch(error => console.error("Audio playback failed:", error));
-    }, { once: true }); // Ensures it only plays once
+    }, { once: true });
 });
