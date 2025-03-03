@@ -22,7 +22,7 @@ updateVideoPosition();
 
 window.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('click', () => {
-        let audio = new Audio('audio/kendrick.ogg');
+        let audio = new Audio('./audio/kendrick.ogg');
         audio.play().then(() => {
             console.log("Audio is playing");
         }).catch(error => console.error('Audio playback failed:', error));
