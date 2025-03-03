@@ -37,6 +37,7 @@
         window.addEventListener('DOMContentLoaded', () => {
             const audio = new Audio('audio/kendrick.ogg');
             audio.preload = 'auto'; // Preload the audio file
+            audio.volume = 0.5;  // Set volume to 50%
 
             document.body.addEventListener('click', () => {
                 audio.play().then(() => {
