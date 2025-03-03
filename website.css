@@ -30,6 +30,11 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  background: black;
+
 }
 
 /* Content Styling */
@@ -41,38 +46,38 @@ html, body {
   padding: 0;
 }
 
-/* Avatar and Border Styling */
-.avatar, .avatarborder {
-  position: absolute;  /* Position both absolutely to overlap them */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 50%;  /* Vertically center the GIFs */
-  left: 50%;  /* Horizontally center the GIFs */
-  transform: translate(-50%, -50%); /* Adjust the centering */
-}
-
-.avatar {
-  z-index: 1;
-}
-
-.avatarborder {
-  z-index: 2;
-}
-
-.avatarborder img, .avatar img {
-  display: block;
-  max-width: none;  /* Allow the images to be their full size */
-  width: auto;      /* Let the image scale naturally */
-  height: auto;     /* Let the image scale naturally */
-}
-
-/* Avatar Name Styling */
-.avatarname {
-  font-family: 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  color: white;
-  margin-top: 220px;  /* Adjust this margin to create space below the gifs */
-  text-align: center;
-  z-index: 3;  /* Ensure text is above the GIFs */
-}
+  /* Avatar and Border Styling */
+  .avatar, .avatarborder {
+    position: absolute;  /* Position both absolutely to overlap them */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;  /* Vertically center the GIFs */
+    left: 50%;  /* Horizontally center the GIFs */
+    transform: translate(-50%, -50%); /* Adjust the centering */
+  }
+  
+  .avatar {
+    z-index: 1;
+  }
+  
+  .avatarborder {
+    z-index: 2;
+  }
+  
+  .avatarborder img, .avatar img {
+    display: block;
+    max-width: none;  /* Allow the images to be their full size */
+    width: auto;      /* Let the image scale naturally */
+    height: auto;     /* Let the image scale naturally */
+  }
+  
+  /* Avatar Name Styling */
+  .avatarname {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 220px;  /* Adjust this margin to create space below the gifs */
+    text-align: center;
+    z-index: 3;  /* Ensure text is above the GIFs */
+  }
