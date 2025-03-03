@@ -23,6 +23,6 @@ updateVideoPosition();
 window.addEventListener('DOMContentLoaded', () => {
     document.body.addEventListener('click', () => {
         let audio = new Audio('audio/kendrick.mp3');
-        audio.play();
+        audio.play().catch(error => console.error('Audio playback failed:', error));
     }, { once: true }); // Ensures it only plays once on first click
 });
