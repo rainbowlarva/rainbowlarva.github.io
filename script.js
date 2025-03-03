@@ -21,7 +21,7 @@ function updateVideoPosition() {
 updateVideoPosition();
 
 window.addEventListener('DOMContentLoaded', () => {
-    const audio = new Audio('https://rainbowlarva.github.io/audio/kendrick.ogg'); 
+    const audio = new Audio('audio/kendrick.ogg');
 
     document.body.addEventListener('click', () => {
         audio.play().then(() => {
